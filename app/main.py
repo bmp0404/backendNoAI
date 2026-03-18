@@ -29,7 +29,7 @@ def read_bookmark(bookmark_title: str, db: Session = Depends(get_db)):
 
 @app.post("/bookmarks/", response_model = Bookmark)
 def create_bookmark(user: BookmarkCreate, db: Session = Depends(get_db)):
-    db_bookmark = BookmarkModel(**user.model_dump)
+    db_bookmark = BookmarkModel(**user.model_dump())
     db.add(db_bookmark)  # add to session
     db.commit()      # commit the transaction to DB
     db.refresh(db_bookmark)  # refresh to get the latest state
@@ -42,16 +42,16 @@ def update_bookmark(bookmark_title: str, bookmark: Bookmark, db : Session = Depe
          raise HTTPException(status_code=404, detail="bookmark not found")
     for k, v in bookmark.model_dump().items():
         setattr(db_bookmark, k, v)
-        db.commit
+        db.commit()
         db.refresh(db_bookmark)
-        return db_bookmark
+    return db_bookmark
 
 
 @app.delete("/bookmarks/{bookmark_title}", response_model = Bookmark)
 def delete_user(bookmark_title: str, db: Session = Depends(get_db)):
     db_bookmark = db.query(BookmarkModel).filter(BookmarkModel.title == bookmark_title).first()
     if not db_bookmark:
-        raise HTTPException(status_code=404, detail="User not found")
+        raise HTTPException(status_code=404, detail="bookmark not found")
     db.delete(db_bookmark)
     db.commit()
     return db_bookmark
