@@ -1,13 +1,16 @@
 from fastapi import FastAPI, Depends, HTTPException
-from app.schemas.schemas import BookmarkBase, BookmarkCreate, Bookmark
-from app.models.models import Bookmark as BookmarkModel, SessionLocal, engine, Base
+from schemas.schemas import BookmarkBase, BookmarkCreate, Bookmark
+from models.models import Bookmark as BookmarkModel
+from models.models import SessionLocal, engine, Base
 from sqlalchemy.orm import Session
 from typing import List
+
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
 def get_db(): 
-    db = SessionLocal
+    db = SessionLocal()
     try:
         yield db
     finally:
@@ -39,8 +42,8 @@ def create_bookmark(user: BookmarkCreate, db: Session = Depends(get_db)):
     return db_bookmark
 
 
-@app.put("/bookmarks/{bookmark_id}", response_model = Bookmark)
-def update_bookmark(bookmark_id: int, bookmark: Bookmark, db : Session = Depends(get_db)):
+@app.put("/bookmarks/{bookmark_id}", response_model = BookmarkBase)
+def update_bookmark(bookmark_id: int, bookmark: BookmarkBase, db : Session = Depends(get_db)):
     db_bookmark = db.query(BookmarkModel).filter(BookmarkModel.id == bookmark_id).first()
     if not db_bookmark:
          raise HTTPException(status_code=404, detail="bookmark not found")

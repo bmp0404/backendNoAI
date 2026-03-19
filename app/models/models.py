@@ -1,13 +1,18 @@
-from sqlmodel import Field, Session, SQLModel, create_engine, select
 from datetime import datetime
 from dotenv import load_dotenv
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, Column, Integer, String, DateTime
 from sqlalchemy.orm import sessionmaker, declarative_base
 import os
 from pathlib import Path
 
-current_dir = (__file__).resolve().parent
-env_path = current_dir.parent.parent / "env"
+current_dir = Path(__file__).resolve().parent
+env_path = current_dir.parent / ".env"
+load_dotenv(env_path)
+
+print('hellohellohello')
+print(env_path)
+print(os.getenv("DB_PORT"))
+
 
 DB_USER = os.getenv("DB_USER")
 DB_PASS = os.getenv("DB_PASS")
@@ -22,9 +27,11 @@ SessionLocal = sessionmaker(bind=engine, autocommit=False, autoflush=False)
 Base = declarative_base()
 
 
-class Bookmark(SQLModel, table=True):
-    id : int | None = Field(default=None, primary_key=True)
-    title : str = Field(index=True)
-    url : str
-    description : str | None = None
-    timestamp : str | datetime = Field(datetime=datetime.now)
+class Bookmark(Base):
+    __tablename__ = "bookmark"
+
+    id = Column(Integer, primary_key=True, index=True, nullable=False)
+    title = Column(String, index=True, nullable=False)
+    url = Column(String, nullable=False)
+    description = Column(String, nullable=True)
+    timestamp = Column(DateTime, default=datetime.now, nullable=False)

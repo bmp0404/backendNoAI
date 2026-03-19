@@ -6,7 +6,7 @@ class BookmarkBase(BaseModel):
     title: str
     url: str
     description: str | None = None
-    timestamp: str | datetime = Field(datetime=datetime.now)
+    timestamp: str | datetime = Field(default=datetime.now())
 
 class BookmarkCreate(BookmarkBase):
     pass
