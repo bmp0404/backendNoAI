@@ -1,0 +1,55 @@
+2026-03-30 22:13:51,558 - INFO - 1 change detected
+2026-03-30 22:13:55,946 - INFO - Request: GET /bookmarks/2 from 127.0.0.1
+2026-03-30 22:13:55,957 - INFO - Response: GET /bookmarks/2 returned 404 to 127.0.0.1
+2026-03-30 22:15:51,171 - INFO - 1 change detected
+2026-03-30 22:15:51,174 - WARNING - WatchFiles detected changes in 'app/main.py'. Reloading...
+2026-03-30 22:15:51,243 - INFO - Shutting down
+2026-03-30 22:15:51,346 - INFO - Waiting for application shutdown.
+2026-03-30 22:15:51,348 - INFO - Application shutdown complete.
+2026-03-30 22:15:51,348 - INFO - Finished server process [90576]
+2026-03-30 22:15:51,726 - INFO - 1 change detected
+2026-03-30 22:15:51,932 - INFO - Started server process [90698]
+2026-03-30 22:15:51,932 - INFO - Waiting for application startup.
+2026-03-30 22:15:51,932 - INFO - Application startup complete.
+2026-03-30 22:15:52,090 - INFO - 3 changes detected
+2026-03-30 22:15:53,201 - INFO - 1 change detected
+2026-03-30 22:15:53,201 - WARNING - WatchFiles detected changes in 'app/main.py'. Reloading...
+2026-03-30 22:15:53,248 - INFO - Shutting down
+2026-03-30 22:15:53,351 - INFO - Waiting for application shutdown.
+2026-03-30 22:15:53,353 - INFO - Application shutdown complete.
+2026-03-30 22:15:53,353 - INFO - Finished server process [90698]
+2026-03-30 22:15:53,734 - INFO - 1 change detected
+2026-03-30 22:15:56,482 - INFO - 1 change detected
+2026-03-30 22:15:56,483 - WARNING - WatchFiles detected changes in 'app/main.py'. Reloading...
+2026-03-30 22:15:59,219 - INFO - 1 change detected
+2026-03-30 22:15:59,220 - WARNING - WatchFiles detected changes in 'app/main.py'. Reloading...
+2026-03-30 22:16:04,273 - INFO - 1 change detected
+2026-03-30 22:16:04,273 - WARNING - WatchFiles detected changes in 'app/main.py'. Reloading...
+2026-03-30 22:16:06,153 - INFO - 1 change detected
+2026-03-30 22:16:06,155 - WARNING - WatchFiles detected changes in 'app/main.py'. Reloading...
+2026-03-30 22:16:07,927 - INFO - 1 change detected
+2026-03-30 22:16:07,929 - WARNING - WatchFiles detected changes in 'app/main.py'. Reloading...
+2026-03-30 22:16:08,346 - INFO - 3 changes detected
+2026-03-30 22:16:08,392 - INFO - Started server process [90734]
+2026-03-30 22:16:08,392 - INFO - Waiting for application startup.
+2026-03-30 22:16:08,393 - INFO - Application startup complete.
+2026-03-30 22:16:09,678 - INFO - 1 change detected
+2026-03-30 22:16:09,678 - WARNING - WatchFiles detected changes in 'app/main.py'. Reloading...
+2026-03-30 22:16:09,708 - INFO - Shutting down
+2026-03-30 22:16:09,810 - INFO - Waiting for application shutdown.
+2026-03-30 22:16:09,811 - INFO - Application shutdown complete.
+2026-03-30 22:16:09,812 - INFO - Finished server process [90734]
+2026-03-30 22:16:10,190 - INFO - 4 changes detected
+2026-03-30 22:16:10,215 - INFO - Started server process [90744]
+2026-03-30 22:16:10,216 - INFO - Waiting for application startup.
+2026-03-30 22:16:10,216 - INFO - Application startup complete.
+2026-03-30 22:16:12,966 - INFO - 1 change detected
+2026-03-30 22:16:12,967 - WARNING - WatchFiles detected changes in 'app/main.py'. Reloading...
+2026-03-30 22:16:13,046 - INFO - Shutting down
+2026-03-30 22:16:13,150 - INFO - Waiting for application shutdown.
+2026-03-30 22:16:13,152 - INFO - Application shutdown complete.
+2026-03-30 22:16:13,153 - INFO - Finished server process [90744]
+2026-03-30 22:16:13,524 - INFO - 4 changes detected
+2026-03-30 22:16:13,556 - INFO - Started server process [90756]
+2026-03-30 22:16:13,556 - INFO - Waiting for application startup.
+2026-03-30 22:16:13,557 - INFO - Application startup complete.

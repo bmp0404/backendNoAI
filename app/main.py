@@ -49,7 +49,8 @@ def search_bookmarks_by_title(bookmark_title: str, db: Session = Depends(get_db)
 
 @app.get("/bookmarks/{bookmark_id}", response_model = Bookmark)
 def read_bookmark(bookmark_id: int, db: Session = Depends(get_db)):
-    bookmark = db.query(BookmarkModel).filter(BookmarkModel.id == bookmark_id).first()
+    if not bookmark_id == 0:
+        bookmark = db.query(BookmarkModel).filter(BookmarkModel.id == bookmark_id).first()
     if not bookmark:
          raise HTTPException(status_code=404, detail="bookmark not found")
     return bookmark
