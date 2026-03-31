@@ -1,10 +1,10 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, HttpUrl
 from datetime import datetime
 
 
 class BookmarkBase(BaseModel):
     title: str
-    url: str
+    url: HttpUrl
     description: str | None = None
     timestamp: str | datetime = Field(default=datetime.now())
 

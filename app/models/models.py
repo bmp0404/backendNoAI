@@ -32,6 +32,6 @@ class Bookmark(Base):
 
     id = Column(Integer, primary_key=True, index=True, nullable=False)
     title = Column(String, index=True, nullable=False)
-    url = Column(String, nullable=False)
+    url = Column(String, nullable=False, unique=True)
     description = Column(String, nullable=True)
     timestamp = Column(DateTime, default=datetime.now, nullable=False)
