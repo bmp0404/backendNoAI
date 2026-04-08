@@ -16,3 +16,14 @@ class Bookmark(BookmarkBase):
     class config:
         orm = True
 
+class TagBase(BaseModel):
+    title : str
+
+class Tag(TagBase):
+    id: int
+    class config:
+        orm = True
+
+
+
+
