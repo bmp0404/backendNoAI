@@ -1,5 +1,6 @@
 from pydantic import BaseModel, Field, HttpUrl, ConfigDict
 from datetime import datetime
+from typing import List
 
 
 class BookmarkBase(BaseModel):
@@ -17,6 +18,10 @@ class Bookmark(BookmarkBase):
     id : int
     class config:
         orm = True
+
+class BookmarkList(BaseModel):                                                                                                                            
+  total_count: int
+  bookmarks: List[Bookmark]
 
 class TagBase(BaseModel):
     model_config = ConfigDict(from_attributes=True)
