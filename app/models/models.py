@@ -48,5 +48,6 @@ class Tag(Base):
 
     id = Column(Integer, primary_key=True, index=True, nullable=False)
     title = Column(String, index=True, nullable=False)
+    timestamp = Column(DateTime, default=datetime.now, nullable=False)
     bookmarks = relationship("Bookmark", secondary=bookmarktag)
 

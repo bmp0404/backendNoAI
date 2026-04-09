@@ -1,6 +1,7 @@
 from fastapi import FastAPI, Depends, HTTPException
-from schemas.schemas import BookmarkBase, BookmarkCreate, Bookmark
+from schemas.schemas import BookmarkBase, BookmarkCreate, Bookmark, TagBase, Tag
 from models.models import Bookmark as BookmarkModel
+from models.models import Tag as TagModel
 from models.models import SessionLocal, engine, Base
 from sqlalchemy.orm import Session
 from typing import List
@@ -40,6 +41,13 @@ async def log_requests(request, call_next):
     response = await call_next(request)
     logger.info(f"Response: {method} {url} returned {response.status_code} to {client_ip}")
     return response
+
+# get /bookmarks
+@app.get("/bookmarks", response_model=List[Bookmark])
+def get_tags(db: Session = Depends(get_db)):
+    bookmarks = db.query(BookmarkModelodel).all()
+    return bookmarks
+
 
 # SEARCH by title (returns list of matches)
 @app.get("/bookmarks/search/{bookmark_title}", response_model=List[Bookmark])
@@ -91,6 +99,76 @@ def delete_user(bookmark_id: int, db: Session = Depends(get_db)):
     db.delete(db_bookmark)
     db.commit()
     return db_bookmark
+
+@app.post("/bookmarks/{bookmark_id}/tags", response_model = Bookmark)
+def add_tags(bookmark_id: int, tags : List[TagBase], db: Session = Depends(get_db)):
+    db_bookmark = db.query(BookmarkModel).filter(BookmarkModel.id == bookmark_id).first()
+    if not db_bookmark:
+        raise HTTPException(status_code=404, detail="bookmark not found")
+    for tag in tags:
+        db_tag = db.query(TagModel).filter(TagModel.title == tag.title).first()
+        if not db_tag:
+            db_tag = TagModel(**tag.model_dump())
+            db.add(db_tag)
+            db.commit()
+            db.refresh(db_tag)
+        tagConnected = False
+        for dbtag in db_bookmark.tags: 
+            if dbtag.id == db_tag.id:
+                tagConnected = True
+        if tagConnected:
+            continue
+        db_bookmark.tags.append(db_tag)
+        db.commit()
+        db.refresh(db_bookmark)
+    
+    return db_bookmark
+
+# get all tags
+@app.get("/tags", response_model=List[Tag])
+def get_tags(db: Session = Depends(get_db)):
+    tags = db.query(TagModel).all()
+    return tags
+
+@app.delete("/bookmarks/{bookmark_id}/tags/{tag_id}", response_model=Bookmark)
+def delete_tag(bookmark_id : int, tag_id : int, db: Session = Depends(get_db)):
+    db_bookmark = db.query(BookmarkModel).filter(BookmarkModel.id == bookmark_id).first()
+    if not db_bookmark:
+        raise HTTPException(status_code=404, detail="bookmark not found")
+    for dbtag in db_bookmark.tags: 
+        if dbtag.id == tag_id:
+            db_bookmark.tags.remove(dbtag)
+    db.commit()
+    db.refresh(db_bookmark)
+    return db_bookmark
+
+
+            
+
+
+    
+
+
+
+
+        # check if linked, if not linked, add it
+
+    """
+    @app.delete("/bookmarks/{bookmark_id}", response_model = Bookmark)
+    def delete_user(bookmark_id: int, db: Session = Depends(get_db)):
+        db_bookmark = db.query(BookmarkModel).filter(BookmarkModel.id == bookmark_id).first()
+        if not db_bookmark:
+            raise HTTPException(status_code=404, detail="bookmark not found")
+        db.delete(db_bookmark)
+        db.commit()
+        return db_bookmark
+    """
+
+# check if bookmark exists
+# check if tag exists, if not, create it
+# check if tag is already linked to bookmark
+# link them together
+
 
 
 
