@@ -61,3 +61,14 @@
 2026-03-30 22:20:38,962 - INFO - Application shutdown complete.
 2026-03-30 22:20:38,963 - INFO - Finished server process [90756]
 2026-03-30 22:20:38,979 - INFO - Stopping reloader process [90571]
+2026-04-09 14:51:45,944 - INFO - Will watch for changes in these directories: ['/Users/krishdhanuka/Documents/Github/backendNoAI']
+2026-04-09 14:51:45,945 - INFO - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-04-09 14:51:45,946 - INFO - Started reloader process [75156] using WatchFiles
+2026-04-09 14:51:46,489 - INFO - Started server process [75163]
+2026-04-09 14:51:46,489 - INFO - Waiting for application startup.
+2026-04-09 14:51:46,489 - INFO - Application startup complete.
+2026-04-09 14:51:50,838 - INFO - Shutting down
+2026-04-09 14:51:50,941 - INFO - Waiting for application shutdown.
+2026-04-09 14:51:50,943 - INFO - Application shutdown complete.
+2026-04-09 14:51:50,944 - INFO - Finished server process [75163]
+2026-04-09 14:51:50,957 - INFO - Stopping reloader process [75156]

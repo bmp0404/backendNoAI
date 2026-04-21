@@ -3,10 +3,10 @@ from schemas.schemas import BookmarkBase, BookmarkCreate, Bookmark, TagBase, Tag
 from models.models import Bookmark as BookmarkModel
 from models.models import Tag as TagModel
 from models.models import SessionLocal, engine, Base
-from sqlalchemy.orm import Session, or_
+from sqlalchemy.orm import Session
+from sqlalchemy import or_
 from typing import List
 import logging
-from starlette.middleware.base import BaseHTTPMiddleware
 from enum import Enum
 from datetime import datetime
 
@@ -82,7 +82,11 @@ def get_bookmarks(search: str | None = None,
         bookmarks = bookmarks.filter(BookmarkModel.timestamp > saved_after)
     total_count = bookmarks.count()
     if sort_by:
-        sort_column = getattr(BookmarkModel, sort_by.value)
+        if sort_by == SortBy.tags:
+            bookmarks = bookmarks.outerjoin(BookmarkModel.tags)
+            sort_column = TagModel.title
+        else:
+            sort_column = getattr(BookmarkModel, sort_by.value)
         if order_by == OrderBy.ascending:
             bookmarks = bookmarks.order_by(sort_column.asc())
         else:
@@ -118,10 +122,9 @@ def search_bookmarks_by_title(bookmark_title: str, db: Session = Depends(get_db)
 
 @app.get("/bookmarks/{bookmark_id}", response_model = Bookmark)
 def read_bookmark(bookmark_id: int, db: Session = Depends(get_db)):
-    if not bookmark_id == 0:
-        bookmark = db.query(BookmarkModel).filter(BookmarkModel.id == bookmark_id).first()
+    bookmark = db.query(BookmarkModel).filter(BookmarkModel.id == bookmark_id).first()
     if not bookmark:
-         raise HTTPException(status_code=404, detail="bookmark not found")
+        raise HTTPException(status_code=404, detail="bookmark not found")
     return bookmark
 
 @app.post("/bookmarks/", response_model = Bookmark)
