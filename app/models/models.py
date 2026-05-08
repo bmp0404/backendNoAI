@@ -41,7 +41,7 @@ class Bookmark(Base):
     url = Column(String, nullable=False, unique=True)
     description = Column(String, nullable=True)
     timestamp = Column(DateTime, default=datetime.now, nullable=False)
-    tags = relationship("Tag", secondary=bookmarktag)
+    tags = relationship("Tag", secondary=bookmarktag, back_populates="bookmarks")
 
 class Tag(Base):
     __tablename__ = "tag"
@@ -49,5 +49,5 @@ class Tag(Base):
     id = Column(Integer, primary_key=True, index=True, nullable=False)
     title = Column(String, index=True, nullable=False)
     timestamp = Column(DateTime, default=datetime.now, nullable=False)
-    bookmarks = relationship("Bookmark", secondary=bookmarktag)
+    bookmarks = relationship("Bookmark", secondary=bookmarktag, back_populates="tags")
 

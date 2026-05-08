@@ -24,11 +24,14 @@ def created_bookmark(bookmark_data):
 
 def test_create_bookmark(bookmark_data):
     response = requests.post(f"{BASE_URL}/bookmarks/", json=bookmark_data)
-    assert response.status_code == 200
     data = response.json()
-    assert data["title"] == bookmark_data["title"]
-    assert "id" in data
-    requests.delete(f"{BASE_URL}/bookmarks/{data['id']}")
+    try:
+        assert response.status_code == 200
+        assert data["title"] == bookmark_data["title"]
+        assert "id" in data
+    finally:
+        if "id" in data:
+            requests.delete(f"{BASE_URL}/bookmarks/{data['id']}")
 
 def test_create_bookmark_duplicate_url(bookmark_data, created_bookmark):
     response = requests.post(f"{BASE_URL}/bookmarks/", json=bookmark_data)

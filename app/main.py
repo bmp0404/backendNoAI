@@ -98,22 +98,6 @@ def get_bookmarks(search: str | None = None,
         "bookmarks": bookmarks.all()
     }
 
-"""
-  Steps to build this endpoint:
-                               
-  1. Define all optional parameters in the function signature
-  2. Start with a base query: query = db.query(BookmarkModel)                                                                                        
-  3. For each parameter — check if it's not None, then chain a .filter() onto query
-  4. Handle sort_by and order separately using .order_by()                                                                                           
-  5. Apply limit and offset last for pagination                                                                                                      
-  6. Run .all() to get results                                                                                                                       
-  7. Return results + total count                                                                                                                    
-                                                                                                                                                     
-  The key insight is that SQLAlchemy queries are lazy — you can keep chaining .filter() calls before executing. You only hit the DB when you call    
-  .all() or .first().
-"""
-
-
 # SEARCH by title (returns list of matches)
 @app.get("/bookmarks/search/{bookmark_title}", response_model=List[Bookmark])
 def search_bookmarks_by_title(bookmark_title: str, db: Session = Depends(get_db)):

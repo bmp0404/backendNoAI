@@ -1,74 +1,117 @@
-2026-03-30 22:13:51,558 - INFO - 1 change detected
-2026-03-30 22:13:55,946 - INFO - Request: GET /bookmarks/2 from 127.0.0.1
-2026-03-30 22:13:55,957 - INFO - Response: GET /bookmarks/2 returned 404 to 127.0.0.1
-2026-03-30 22:15:51,171 - INFO - 1 change detected
-2026-03-30 22:15:51,174 - WARNING - WatchFiles detected changes in 'app/main.py'. Reloading...
-2026-03-30 22:15:51,243 - INFO - Shutting down
-2026-03-30 22:15:51,346 - INFO - Waiting for application shutdown.
-2026-03-30 22:15:51,348 - INFO - Application shutdown complete.
-2026-03-30 22:15:51,348 - INFO - Finished server process [90576]
-2026-03-30 22:15:51,726 - INFO - 1 change detected
-2026-03-30 22:15:51,932 - INFO - Started server process [90698]
-2026-03-30 22:15:51,932 - INFO - Waiting for application startup.
-2026-03-30 22:15:51,932 - INFO - Application startup complete.
-2026-03-30 22:15:52,090 - INFO - 3 changes detected
-2026-03-30 22:15:53,201 - INFO - 1 change detected
-2026-03-30 22:15:53,201 - WARNING - WatchFiles detected changes in 'app/main.py'. Reloading...
-2026-03-30 22:15:53,248 - INFO - Shutting down
-2026-03-30 22:15:53,351 - INFO - Waiting for application shutdown.
-2026-03-30 22:15:53,353 - INFO - Application shutdown complete.
-2026-03-30 22:15:53,353 - INFO - Finished server process [90698]
-2026-03-30 22:15:53,734 - INFO - 1 change detected
-2026-03-30 22:15:56,482 - INFO - 1 change detected
-2026-03-30 22:15:56,483 - WARNING - WatchFiles detected changes in 'app/main.py'. Reloading...
-2026-03-30 22:15:59,219 - INFO - 1 change detected
-2026-03-30 22:15:59,220 - WARNING - WatchFiles detected changes in 'app/main.py'. Reloading...
-2026-03-30 22:16:04,273 - INFO - 1 change detected
-2026-03-30 22:16:04,273 - WARNING - WatchFiles detected changes in 'app/main.py'. Reloading...
-2026-03-30 22:16:06,153 - INFO - 1 change detected
-2026-03-30 22:16:06,155 - WARNING - WatchFiles detected changes in 'app/main.py'. Reloading...
-2026-03-30 22:16:07,927 - INFO - 1 change detected
-2026-03-30 22:16:07,929 - WARNING - WatchFiles detected changes in 'app/main.py'. Reloading...
-2026-03-30 22:16:08,346 - INFO - 3 changes detected
-2026-03-30 22:16:08,392 - INFO - Started server process [90734]
-2026-03-30 22:16:08,392 - INFO - Waiting for application startup.
-2026-03-30 22:16:08,393 - INFO - Application startup complete.
-2026-03-30 22:16:09,678 - INFO - 1 change detected
-2026-03-30 22:16:09,678 - WARNING - WatchFiles detected changes in 'app/main.py'. Reloading...
-2026-03-30 22:16:09,708 - INFO - Shutting down
-2026-03-30 22:16:09,810 - INFO - Waiting for application shutdown.
-2026-03-30 22:16:09,811 - INFO - Application shutdown complete.
-2026-03-30 22:16:09,812 - INFO - Finished server process [90734]
-2026-03-30 22:16:10,190 - INFO - 4 changes detected
-2026-03-30 22:16:10,215 - INFO - Started server process [90744]
-2026-03-30 22:16:10,216 - INFO - Waiting for application startup.
-2026-03-30 22:16:10,216 - INFO - Application startup complete.
-2026-03-30 22:16:12,966 - INFO - 1 change detected
-2026-03-30 22:16:12,967 - WARNING - WatchFiles detected changes in 'app/main.py'. Reloading...
-2026-03-30 22:16:13,046 - INFO - Shutting down
-2026-03-30 22:16:13,150 - INFO - Waiting for application shutdown.
-2026-03-30 22:16:13,152 - INFO - Application shutdown complete.
-2026-03-30 22:16:13,153 - INFO - Finished server process [90744]
-2026-03-30 22:16:13,524 - INFO - 4 changes detected
-2026-03-30 22:16:13,556 - INFO - Started server process [90756]
-2026-03-30 22:16:13,556 - INFO - Waiting for application startup.
-2026-03-30 22:16:13,557 - INFO - Application startup complete.
-2026-03-30 22:16:20,759 - INFO - 11 changes detected
-2026-03-30 22:16:47,907 - INFO - 29 changes detected
-2026-03-30 22:16:49,674 - INFO - 4 changes detected
-2026-03-30 22:20:38,852 - INFO - Shutting down
-2026-03-30 22:20:38,960 - INFO - Waiting for application shutdown.
-2026-03-30 22:20:38,962 - INFO - Application shutdown complete.
-2026-03-30 22:20:38,963 - INFO - Finished server process [90756]
-2026-03-30 22:20:38,979 - INFO - Stopping reloader process [90571]
-2026-04-09 14:51:45,944 - INFO - Will watch for changes in these directories: ['/Users/krishdhanuka/Documents/Github/backendNoAI']
-2026-04-09 14:51:45,945 - INFO - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
-2026-04-09 14:51:45,946 - INFO - Started reloader process [75156] using WatchFiles
-2026-04-09 14:51:46,489 - INFO - Started server process [75163]
-2026-04-09 14:51:46,489 - INFO - Waiting for application startup.
-2026-04-09 14:51:46,489 - INFO - Application startup complete.
-2026-04-09 14:51:50,838 - INFO - Shutting down
-2026-04-09 14:51:50,941 - INFO - Waiting for application shutdown.
-2026-04-09 14:51:50,943 - INFO - Application shutdown complete.
-2026-04-09 14:51:50,944 - INFO - Finished server process [75163]
-2026-04-09 14:51:50,957 - INFO - Stopping reloader process [75156]
+2026-05-08 15:39:14,235 - INFO - 1 change detected
+2026-05-08 15:43:58,210 - INFO - 3 changes detected
+2026-05-08 15:43:58,211 - WARNING - WatchFiles detected changes in 'pytest/test_api.py'. Reloading...
+2026-05-08 15:43:58,243 - INFO - Shutting down
+2026-05-08 15:43:58,345 - INFO - Waiting for application shutdown.
+2026-05-08 15:43:58,346 - INFO - Application shutdown complete.
+2026-05-08 15:43:58,346 - INFO - Finished server process [41328]
+2026-05-08 15:43:58,714 - INFO - 1 change detected
+2026-05-08 15:43:58,935 - INFO - Started server process [42404]
+2026-05-08 15:43:58,935 - INFO - Waiting for application startup.
+2026-05-08 15:43:58,936 - INFO - Application startup complete.
+2026-05-08 15:44:06,590 - INFO - 3 changes detected
+2026-05-08 15:44:06,590 - WARNING - WatchFiles detected changes in 'app/models/models.py'. Reloading...
+2026-05-08 15:44:06,621 - INFO - Shutting down
+2026-05-08 15:44:06,722 - INFO - Waiting for application shutdown.
+2026-05-08 15:44:06,723 - INFO - Application shutdown complete.
+2026-05-08 15:44:06,723 - INFO - Finished server process [42404]
+2026-05-08 15:44:07,092 - INFO - 4 changes detected
+2026-05-08 15:44:07,148 - INFO - Started server process [42424]
+2026-05-08 15:44:07,149 - INFO - Waiting for application startup.
+2026-05-08 15:44:07,149 - INFO - Application startup complete.
+2026-05-08 15:44:22,709 - INFO - 3 changes detected
+2026-05-08 15:44:22,709 - WARNING - WatchFiles detected changes in 'app/models/models.py'. Reloading...
+2026-05-08 15:44:22,716 - INFO - Shutting down
+2026-05-08 15:44:22,818 - INFO - Waiting for application shutdown.
+2026-05-08 15:44:22,818 - INFO - Application shutdown complete.
+2026-05-08 15:44:22,819 - INFO - Finished server process [42424]
+2026-05-08 15:44:23,186 - INFO - 4 changes detected
+2026-05-08 15:44:23,222 - INFO - Started server process [42448]
+2026-05-08 15:44:23,223 - INFO - Waiting for application startup.
+2026-05-08 15:44:23,223 - INFO - Application startup complete.
+2026-05-08 15:58:35,122 - INFO - 3 changes detected
+2026-05-08 15:58:35,123 - WARNING - WatchFiles detected changes in 'pytest/test_api.py'. Reloading...
+2026-05-08 15:58:35,211 - INFO - Shutting down
+2026-05-08 15:58:35,313 - INFO - Waiting for application shutdown.
+2026-05-08 15:58:35,314 - INFO - Application shutdown complete.
+2026-05-08 15:58:35,314 - INFO - Finished server process [42448]
+2026-05-08 15:58:35,677 - INFO - 1 change detected
+2026-05-08 15:58:35,950 - INFO - Started server process [42651]
+2026-05-08 15:58:35,951 - INFO - Waiting for application startup.
+2026-05-08 15:58:35,951 - INFO - Application startup complete.
+2026-05-08 16:16:38,704 - INFO - 3 changes detected
+2026-05-08 16:16:38,764 - INFO - Request: POST /bookmarks/ from 127.0.0.1
+2026-05-08 16:16:38,774 - INFO - Response: POST /bookmarks/ returned 200 to 127.0.0.1
+2026-05-08 16:16:38,776 - INFO - Request: DELETE /bookmarks/1 from 127.0.0.1
+2026-05-08 16:16:38,783 - INFO - Response: DELETE /bookmarks/1 returned 200 to 127.0.0.1
+2026-05-08 16:16:38,785 - INFO - Request: POST /bookmarks/ from 127.0.0.1
+2026-05-08 16:16:38,787 - INFO - Response: POST /bookmarks/ returned 200 to 127.0.0.1
+2026-05-08 16:16:38,789 - INFO - Request: POST /bookmarks/ from 127.0.0.1
+2026-05-08 16:16:38,790 - INFO - Response: POST /bookmarks/ returned 409 to 127.0.0.1
+2026-05-08 16:16:38,791 - INFO - Request: DELETE /bookmarks/2 from 127.0.0.1
+2026-05-08 16:16:38,793 - INFO - Response: DELETE /bookmarks/2 returned 200 to 127.0.0.1
+2026-05-08 16:16:38,795 - INFO - Request: POST /bookmarks/ from 127.0.0.1
+2026-05-08 16:16:38,798 - INFO - Response: POST /bookmarks/ returned 200 to 127.0.0.1
+2026-05-08 16:16:38,799 - INFO - Request: GET /bookmarks/3 from 127.0.0.1
+2026-05-08 16:16:38,801 - INFO - Response: GET /bookmarks/3 returned 200 to 127.0.0.1
+2026-05-08 16:16:38,802 - INFO - Request: DELETE /bookmarks/3 from 127.0.0.1
+2026-05-08 16:16:38,805 - INFO - Response: DELETE /bookmarks/3 returned 200 to 127.0.0.1
+2026-05-08 16:16:38,806 - INFO - Request: GET /bookmarks/999999 from 127.0.0.1
+2026-05-08 16:16:38,807 - INFO - Response: GET /bookmarks/999999 returned 404 to 127.0.0.1
+2026-05-08 16:16:38,809 - INFO - Request: POST /bookmarks/ from 127.0.0.1
+2026-05-08 16:16:38,812 - INFO - Response: POST /bookmarks/ returned 200 to 127.0.0.1
+2026-05-08 16:16:38,813 - INFO - Request: PUT /bookmarks/4 from 127.0.0.1
+2026-05-08 16:16:38,819 - INFO - Response: PUT /bookmarks/4 returned 200 to 127.0.0.1
+2026-05-08 16:16:38,821 - INFO - Request: DELETE /bookmarks/4 from 127.0.0.1
+2026-05-08 16:16:38,823 - INFO - Response: DELETE /bookmarks/4 returned 200 to 127.0.0.1
+2026-05-08 16:16:38,825 - INFO - Request: PUT /bookmarks/999999 from 127.0.0.1
+2026-05-08 16:16:38,826 - INFO - Response: PUT /bookmarks/999999 returned 404 to 127.0.0.1
+2026-05-08 16:16:38,828 - INFO - Request: POST /bookmarks/ from 127.0.0.1
+2026-05-08 16:16:38,832 - INFO - Response: POST /bookmarks/ returned 200 to 127.0.0.1
+2026-05-08 16:16:38,833 - INFO - Request: DELETE /bookmarks/5 from 127.0.0.1
+2026-05-08 16:16:38,835 - INFO - Response: DELETE /bookmarks/5 returned 200 to 127.0.0.1
+2026-05-08 16:16:38,836 - INFO - Request: GET /bookmarks/5 from 127.0.0.1
+2026-05-08 16:16:38,838 - INFO - Response: GET /bookmarks/5 returned 404 to 127.0.0.1
+2026-05-08 16:16:38,839 - INFO - Request: DELETE /bookmarks/999999 from 127.0.0.1
+2026-05-08 16:16:38,840 - INFO - Response: DELETE /bookmarks/999999 returned 404 to 127.0.0.1
+2026-05-08 16:16:38,842 - INFO - Request: POST /bookmarks/ from 127.0.0.1
+2026-05-08 16:16:38,844 - INFO - Response: POST /bookmarks/ returned 200 to 127.0.0.1
+2026-05-08 16:16:38,846 - INFO - Request: GET /bookmarks/search/Test Bookmark from 127.0.0.1
+2026-05-08 16:16:38,849 - INFO - Response: GET /bookmarks/search/Test Bookmark returned 200 to 127.0.0.1
+2026-05-08 16:16:38,850 - INFO - Request: DELETE /bookmarks/6 from 127.0.0.1
+2026-05-08 16:16:38,852 - INFO - Response: DELETE /bookmarks/6 returned 200 to 127.0.0.1
+2026-05-08 16:16:38,854 - INFO - Request: GET /bookmarks from 127.0.0.1
+2026-05-08 16:16:38,857 - INFO - Response: GET /bookmarks returned 200 to 127.0.0.1
+2026-05-08 16:16:38,858 - INFO - Request: POST /bookmarks/ from 127.0.0.1
+2026-05-08 16:16:38,861 - INFO - Response: POST /bookmarks/ returned 200 to 127.0.0.1
+2026-05-08 16:16:38,863 - INFO - Request: GET /bookmarks from 127.0.0.1
+2026-05-08 16:16:38,871 - INFO - Response: GET /bookmarks returned 200 to 127.0.0.1
+2026-05-08 16:16:38,873 - INFO - Request: DELETE /bookmarks/7 from 127.0.0.1
+2026-05-08 16:16:38,875 - INFO - Response: DELETE /bookmarks/7 returned 200 to 127.0.0.1
+2026-05-08 16:16:38,876 - INFO - Request: GET /bookmarks from 127.0.0.1
+2026-05-08 16:16:38,878 - INFO - Response: GET /bookmarks returned 200 to 127.0.0.1
+2026-05-08 16:16:38,880 - INFO - Request: POST /bookmarks/ from 127.0.0.1
+2026-05-08 16:16:38,883 - INFO - Response: POST /bookmarks/ returned 200 to 127.0.0.1
+2026-05-08 16:16:38,884 - INFO - Request: POST /bookmarks/8/tags from 127.0.0.1
+2026-05-08 16:16:38,895 - INFO - Response: POST /bookmarks/8/tags returned 200 to 127.0.0.1
+2026-05-08 16:16:38,897 - INFO - Request: DELETE /bookmarks/8 from 127.0.0.1
+2026-05-08 16:16:38,901 - INFO - Response: DELETE /bookmarks/8 returned 200 to 127.0.0.1
+2026-05-08 16:16:38,902 - INFO - Request: POST /bookmarks/ from 127.0.0.1
+2026-05-08 16:16:38,905 - INFO - Response: POST /bookmarks/ returned 200 to 127.0.0.1
+2026-05-08 16:16:38,907 - INFO - Request: POST /bookmarks/9/tags from 127.0.0.1
+2026-05-08 16:16:38,911 - INFO - Response: POST /bookmarks/9/tags returned 200 to 127.0.0.1
+2026-05-08 16:16:38,912 - INFO - Request: POST /bookmarks/9/tags from 127.0.0.1
+2026-05-08 16:16:38,914 - INFO - Response: POST /bookmarks/9/tags returned 200 to 127.0.0.1
+2026-05-08 16:16:38,915 - INFO - Request: DELETE /bookmarks/9 from 127.0.0.1
+2026-05-08 16:16:38,918 - INFO - Response: DELETE /bookmarks/9 returned 200 to 127.0.0.1
+2026-05-08 16:16:38,919 - INFO - Request: GET /tags from 127.0.0.1
+2026-05-08 16:16:38,920 - INFO - Response: GET /tags returned 200 to 127.0.0.1
+2026-05-08 16:16:38,922 - INFO - Request: POST /bookmarks/ from 127.0.0.1
+2026-05-08 16:16:38,925 - INFO - Response: POST /bookmarks/ returned 200 to 127.0.0.1
+2026-05-08 16:16:38,926 - INFO - Request: POST /bookmarks/10/tags from 127.0.0.1
+2026-05-08 16:16:38,931 - INFO - Response: POST /bookmarks/10/tags returned 200 to 127.0.0.1
+2026-05-08 16:16:38,932 - INFO - Request: DELETE /bookmarks/10/tags/4 from 127.0.0.1
+2026-05-08 16:16:38,935 - INFO - Response: DELETE /bookmarks/10/tags/4 returned 200 to 127.0.0.1
+2026-05-08 16:16:38,937 - INFO - Request: DELETE /bookmarks/10 from 127.0.0.1
+2026-05-08 16:16:38,939 - INFO - Response: DELETE /bookmarks/10 returned 200 to 127.0.0.1
+2026-05-08 16:16:39,069 - INFO - 2 changes detected

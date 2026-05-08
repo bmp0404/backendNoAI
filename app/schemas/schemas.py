@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field, HttpUrl, ConfigDict
+from pydantic import BaseModel, Field, HttpUrl, ConfigDict, field_validator
 from datetime import datetime
 from typing import List
 
@@ -12,7 +12,8 @@ class Tag(TagBase):
 class BookmarkBase(BaseModel):
     model_config = ConfigDict(from_attributes=True)
     title: str
-    url: HttpUrl
+    url: str  # stored as plain str, validated below
+    # TODO(human): implement validate_url below
     description: str | None = None
     timestamp: str | datetime = Field(default=datetime.now())
     tags: list[Tag] = []
